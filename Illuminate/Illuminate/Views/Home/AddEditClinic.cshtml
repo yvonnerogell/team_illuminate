@@ -6,22 +6,39 @@
 <div class="container">
 
     <form>
-       
+
         <!-- Basic info row -->
         <div class="row">
-            <div class="col">
+            <div class="col-md-4">
+                <label for="clinicID">Clinic ID</label>
+                <input id="clinicID" class="form-control-plaintext" type="text" placeholder="19" readonly>
+            </div>
+            <div class="col-md-4">
                 <label for="clinicName">Clinic Name</label>
                 <input type="text" id="clinicName" class="form-control" placeholder="Enter clinic name">
             </div>
-            <div class="col">
-                <label for="clinicID">Clinic ID</label>
-                <input id="clinicID" class="form-control" type="text" placeholder="19" readonly>
-            </div>
-            <div class="col">
+            <div class="col-md-4">
                 <label for="clinicPhone">Clinic Phone #</label>
                 <input type="text" id="clinicPhone" class="form-control" placeholder="Enter clinic phone number">
             </div>
         </div>
+
+        <!-- Location row -->
+        <div class="row">
+            <div class="col-md-4">
+                <label for="townVillage">Town/Village</label>
+                <input type="text" id="townVillage" class="form-control" placeholder="Enter town/village">
+            </div>
+            <div class="col-md-4">
+                <label for="state">State</label>
+                <input id="state" class="form-control" type="text" placeholder="Enter state">
+            </div>
+            <div class="col-md-4">
+                <label for="country">Country</label>
+                <input type="text" id="clinicPhone" class="form-control" placeholder="Nigeria">
+            </div>
+        </div>
+
     </form>
 
 </div>
