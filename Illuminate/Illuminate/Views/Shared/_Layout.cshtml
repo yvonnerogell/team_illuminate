@@ -10,16 +10,16 @@
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            @Html.ActionLink("Illuminate", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Illuminate", "Dashboard", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto nav-link">
-                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("DASHBOARD", "Dashboard", "Home", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("INVENTORY", "Inventory", "Home", null, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("ADD/EDIT CLINIC", "AddEditClinic", "Home", null, new { @class = "nav-link" })</li>
                 </ul>
             </div>
         </nav>
@@ -29,7 +29,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Team Illuminate</p>
         </footer>
     </div>
 
