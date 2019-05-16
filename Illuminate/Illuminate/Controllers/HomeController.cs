@@ -33,5 +33,10 @@ namespace Illuminate.Controllers
 
             return View();
         }
+
+        public ActionResult EditClinic()
+        {
+            return View();
+        }
     }
 }
