@@ -38,5 +38,10 @@ namespace Illuminate.Controllers
         {
             return View();
         }
+
+        public ActionResult ClinicReport()
+        {
+            return View();
+        }
     }
 }

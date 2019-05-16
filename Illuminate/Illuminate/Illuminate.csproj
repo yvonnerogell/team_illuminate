@@ -201,6 +201,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\Dashboard.cshtml" />
     <Content Include="Views\Home\EditClinic.cshtml" />
+    <Content Include="Views\Home\ClinicReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
