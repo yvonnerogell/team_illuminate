@@ -134,6 +134,7 @@
     <Content Include="Content\Img\All_Clinics.png" />
     <Content Include="Content\Img\Beli_Clinic.png" />
     <Content Include="Content\Img\Heatmap.PNG" />
+    <Content Include="Content\Img\HeatmapResize.PNG" />
     <Content Include="Content\Img\IlluminateLogo.png" />
     <Content Include="Content\Img\Map.PNG" />
     <Content Include="favicon.ico" />
