@@ -26,5 +26,12 @@ namespace Illuminate.Controllers
 
             return View();
         }
+
+        public ActionResult Welcome()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
