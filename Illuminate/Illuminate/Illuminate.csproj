@@ -127,6 +127,10 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Img\AC_age.png" />
+    <Content Include="Content\Img\AC_num.png" />
+    <Content Include="Content\Img\AC_result.png" />
+    <Content Include="Content\Img\AC_risk.png" />
     <Content Include="Content\Img\All_Clinics.png" />
     <Content Include="Content\Img\Beli_Clinic.png" />
     <Content Include="Content\Img\IlluminateLogo.png" />
