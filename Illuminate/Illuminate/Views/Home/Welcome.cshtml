@@ -1,28 +1,54 @@
 ﻿@{
-    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
 }
 
-<div class="jumbotron" style="background-color:transparent">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 17px;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+            .container img {
+                vertical-align: middle;
+            }
+
+            .container .content {
+                position: absolute;
+                top: 0;
+                background: rgb(0, 0, 0); /* Fallback color */
+                background: rgb(128, 128, 128, 0.5); /* Black background with 0.5 opacity */
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+    </style>
+</head>
+<body>
+
+
+
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <img src="~/Content/Img/illuminate_logo.png" class="mx-auto d-block text-center img-fluid" />
-            </div>
-            
-        </div>
-        <div class="row">
-            <img src="~/Content/Img/phototherapy.jpg" class="mx-auto d-block img-fluid" />
+        <img src="~/Content/img/phototherapy.jpg" style="width:100%;">
+        <div class="content">
+            <h1>Illuminate</h1>
+            <p>Data and insights on neonatal jaundice to help bring about a world without Kernicterus.</p>
         </div>
     </div>
-</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="carousel-caption">
-                <h2>Data and insights on neonatal jaundice to help bring about a world without Kernicterus.</h2>
-                
-            </div>
-
-            </div>
-        </div>
+</body>
+</html>
 
