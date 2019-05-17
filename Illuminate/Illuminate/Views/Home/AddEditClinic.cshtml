@@ -2,23 +2,27 @@
     ViewBag.Title = "ADD NEW CLINIC";
 }
 
+<p><br></p>
 
 <div class="container">
 
-    <h2><br>@ViewBag.Title<br></h2>
-
-    <div>
-        <a class="btn btn-primary" href="#" data-toggle="button" role="button" aria-pressed="true" autocomplete="off">Add New Clinic</a>
-    </div>
-
-
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item active">
+                <a class="page-link" href="~/Home/AddEditClinic" tabindex="-1">Add New Clinic</a> <span class="sr-only">(current)</span>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="~/Home/EditClinic">Edit Clinic</a>
+            </li>
+        </ul>
+    </nav>
 
     <form>
 
         <!-- Basic info row -->
         <div class="row">
             <div class="col">
-                <p><br><br><strong>Basic Info</strong><br></p>
+                <p><br><strong>Basic Info</strong><br></p>
             </div>
         </div>
         <div class="row">
