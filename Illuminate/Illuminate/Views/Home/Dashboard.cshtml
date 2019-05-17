@@ -7,11 +7,12 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <img src="~/Content/Img/Heatmap.PNG" width="670" height="591" class="mx-auto d-block" usemap="#heatmap" />
-
-                <map id="heatmap" name="heatmap">
-                    <area shape="circle" coords="390,382,24" href="~/Home/ClinicReport" alt="Report">
-                </map>
+                <div>
+                    <img src="~/Content/Img/Heatmap.PNG" width="670" height="591" class="mx-auto d-block" usemap="#heatmap" />
+                    <a href="~/Home/ClinicReport">
+                        <div style="position: absolute; left: 382px; top: 357px; height: 48px; width: 48px; border-radius: 24px;" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></div>
+                    </a>
+                </div>
             </div>
             <div class="col-3">
 
@@ -28,6 +29,11 @@
     </div>
 </div>
 
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
 
 
 
