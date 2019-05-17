@@ -14,8 +14,15 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-8">
-                <p style="margin-left: 16px"><strong>View usage data from 5/1/2019 to @DateTime.Now.ToShortDateString()</strong><br><br></p>
+            
+            <div class="col-md-4">
+                <label for="startDate">From</label>
+                <input type="text" id="startDate" class="form-control" placeholder="@DateTime.Now.ToShortDateString()">
+            </div>
+            <div class="col-md-4">
+                <label for="endDate">To</label>
+                <input id="endDate" class="form-control" type="text" placeholder="Enter state">
+                <br />
             </div>
             <div class="col-3">
                 <p><strong>SUMMARY RESULTS - ALL CLINICS</strong></p>
@@ -50,6 +57,3 @@
         $('[data-toggle="popover"]').popover()
     })
 </script>
-
-
-
