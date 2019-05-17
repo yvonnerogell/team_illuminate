@@ -14,42 +14,43 @@
     </div>
     <div class="container">
         <div class="row">
-            
-            <div class="col-md-4">
-                <label for="startDate">From</label>
-                <input type="text" id="startDate" class="form-control" placeholder="@DateTime.Now.ToShortDateString()">
-            </div>
-            <div class="col-md-4">
-                <label for="endDate">To</label>
-                <input id="endDate" class="form-control" type="text" placeholder="Enter state">
-                <br />
+
+            <div class="col-md-8">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="startDate" style="margin-left: 14px; margin-right: 8px"><strong>From</strong></label>
+                        <input type="text" id="startDate" class="form-control" placeholder="3/1/2019">
+                        <label for="endDate" style="margin-left: 8px; margin-right: 8px"><strong>To</strong></label>
+                        <input id="endDate" class="form-control" type="text" placeholder="@DateTime.Now.ToShortDateString()">
+                        <br />
+                    </div>
+                </form>
             </div>
             <div class="col-3">
                 <p><strong>SUMMARY RESULTS - ALL CLINICS</strong></p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-8">
-                <div>
-                    <img src="~/Content/Img/Heatmap.PNG" width="670" height="591" class="mx-auto d-block" usemap="#heatmap" />
-                    <a href="~/Home/ClinicReport">
-                        <div style="position: absolute; left: 382px; top: 357px; height: 48px; width: 48px; border-radius: 24px;" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></div>
-                    </a>
+            <div class="row">
+                <div class="col-8">
+                    <div>
+                        <img src="~/Content/Img/Heatmap.PNG" width="670" height="591" class="mx-auto d-block" usemap="#heatmap" />
+                        <a href="~/Home/ClinicReport">
+                            <div style="position: absolute; left: 382px; top: 357px; height: 48px; width: 48px; border-radius: 24px;" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+
+                    <img src="~/Content/Img/AC_result.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
+
+                    <img src="~/Content/Img/AC_num.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
+
+                    <img src="~/Content/Img/AC_risk.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
+
+                    <img src="~/Content/Img/AC_age.png" class="mx-auto d-block img-fluid" />
+
                 </div>
             </div>
-            <div class="col-3">
-
-                <img src="~/Content/Img/AC_result.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
-
-                <img src="~/Content/Img/AC_num.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
-
-                <img src="~/Content/Img/AC_risk.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
-
-                <img src="~/Content/Img/AC_age.png" class="mx-auto d-block img-fluid" />
-
-            </div>
         </div>
-    </div>
 </div>
 
 <script>
