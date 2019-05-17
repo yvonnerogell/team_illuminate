@@ -1,7 +1,120 @@
 ﻿
 @{
-    ViewBag.Title = "EditClinic2";
+                /**/
+
+                ViewBag.Title = "EditClinic2";
 }
 
-<h2>EditClinic2</h2>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<p><br></p>
+
+<div class="container">
+
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="~/Home/AddEditClinic" tabindex="-1">Add New Clinic</a> <span class="sr-only">(current)</span>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="~/Home/EditClinic">Edit Clinic</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-4">
+                <form class="navbar-form" role="search">
+                    <div class="input-group add-on">
+                        <input class="form-control" placeholder="Search for clinic by name or ID" name="srch-term" id="srch-term" type="text">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+    <form>
+
+        <!-- Basic info row -->
+        <div class="row">
+            <div class="col">
+                <p><br><i class="fas fa-clinic-medical"></i><strong> Clinic Info</strong><br></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="clinicID">Clinic ID</label>
+                <input id="clinicID" class="form-control" type="text" placeholder="">
+            </div>
+            <div class="col-md-4">
+                <label for="clinicName">Clinic Name</label>
+                <input type="text" id="clinicName" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-4">
+                <label for="clinicPhone">Clinic Phone #</label>
+                <input type="text" id="clinicPhone" class="form-control" placeholder="">
+            </div>
+        </div>
+
+
+        <!-- Location row -->
+        <div class="row">
+            <div class="col">
+                <p><br><br><i class="fas fa-map-marker-alt"></i><strong> Location Info</strong><br></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="townVillage">Town/Village</label>
+                <input type="text" id="townVillage" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-4">
+                <label for="state">State</label>
+                <input id="state" class="form-control" type="text" placeholder="">
+            </div>
+            <div class="col-md-4">
+                <label for="country">Country</label>
+                <input type="text" id="clinicPhone" class="form-control" placeholder="">
+            </div>
+        </div>
+
+        <!-- Primary contact row -->
+        <div class="row">
+            <div class="col">
+                <p><br><br><i class="fas fa-user"></i><strong> Primary Clinic Contact</strong><br></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-4">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" class="form-control" type="text" placeholder="">
+            </div>
+            <div class="col-md-4">
+                <label for="contactPhone">Phone #</label>
+                <input type="text" id="contactPhone" class="form-control" placeholder="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p><br></p>
+            </div>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+
+    </form>
+
+</div>
+
+
 
