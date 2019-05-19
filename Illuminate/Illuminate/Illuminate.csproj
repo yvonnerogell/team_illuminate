@@ -132,6 +132,7 @@
     <Content Include="Content\Img\AC_result.png" />
     <Content Include="Content\Img\AC_risk.png" />
     <Content Include="Content\Img\All_Clinics.png" />
+    <Content Include="Content\Img\babymother.jpg" />
     <Content Include="Content\Img\Beli_Clinic.png" />
     <Content Include="Content\Img\Heatmap.PNG" />
     <Content Include="Content\Img\HeatmapResize.PNG" />
@@ -139,7 +140,10 @@
     <Content Include="Content\Img\illuminate_logo.png" />
     <Content Include="Content\Img\logo_nobackground.png" />
     <Content Include="Content\Img\Map.PNG" />
+    <Content Include="Content\Img\newborn.jpg" />
     <Content Include="Content\Img\phototherapy.jpg" />
+    <Content Include="Content\Img\phototherapy1.jpg" />
+    <Content Include="Content\Img\StMarys.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
