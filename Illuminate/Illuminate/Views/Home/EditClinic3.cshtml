@@ -1,7 +1,90 @@
 ﻿
 @{
-    ViewBag.Title = "EditClinic3";
+                /**/
+
+                ViewBag.Title = "EditClinic3";
 }
 
-<h2>EditClinic3</h2>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<p><br></p>
+
+<div class="container">
+
+    <div class="row justify-content-between">
+        <div class="col-4">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="~/Home/AddEditClinic" tabindex="-1">Add New Clinic</a> <span class="sr-only">(current)</span>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="~/Home/EditClinic">Edit Clinic</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col-4">
+            <form class="navbar-form" role="search">
+                <div class="input-group add-on">
+                    <input class="form-control col" placeholder="Search for clinic" name="srch-term" id="srch-term" type="text">
+
+                    <div class="input-group-btn">
+                        <a class="page-link" href="~/Home/EditClinic2"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <br><br>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h5>Search Results:</h5>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Clinic Name</th>
+                    <th scope="col">Clinic Phone</th>
+                    <th scope="col">Town</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Contact<br />First Name</th>
+                    <th scope="col">Contact<br />Last Name</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td>Kaduna Community Healthcare</td>
+                    <td>809 74 987 678</td>
+                    <td>Kaduna</td>
+                    <td>Kaduna</td>
+                    <td>Atinuke</td>
+                    <td>Saaj</td>
+                    <td><a href="~/Home/EditClinic2">Edit clinic</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="text-align:center;color:green">
+            <h5><br>Clinic successfully updated!</h5>
+        </div>
+    </div>
+
+</div>
 
