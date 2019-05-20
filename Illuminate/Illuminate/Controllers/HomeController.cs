@@ -49,6 +49,11 @@ namespace Illuminate.Controllers
             return View();
         }
 
+        public ActionResult EditClinic3()
+        {
+            return View();
+        }
+
         public ActionResult ClinicReport()
         {
             return View();

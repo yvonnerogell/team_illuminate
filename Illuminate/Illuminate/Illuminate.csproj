@@ -224,6 +224,7 @@
     <Content Include="Views\Shared\_WelcomeLayout.cshtml" />
     <Content Include="Views\Home\EditClinic2.cshtml" />
     <Content Include="Views\Home\EditClinic1.cshtml" />
+    <Content Include="Views\Home\EditClinic3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
