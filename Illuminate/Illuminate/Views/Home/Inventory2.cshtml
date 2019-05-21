@@ -1,0 +1,279 @@
+﻿@{
+    ViewBag.Title = "Inventory2";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test Strip Inventory by Clinic</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.14.2/dist/extensions/editable/bootstrap-table-editable.js"></script>
+</head>
+
+
+<body>
+    <h3>Test Strip Inventory Report by Clinic</h3>
+    <div class="row justify-content-end">
+        <a href="~/Home/Inventory2" class="btn btn-primary btn-sm" role="button" style="margin-right: 12px">Save</a>
+        <button type="button" class="btn btn-primary btn-sm" style="margin-right: 12px">Download Report</button>
+    </div>
+    <br />
+
+    <div class="table-responsive modal-dialog-scrollable">
+        <table class="table table-striped"
+               data-toggle="table"
+               data-sortable="true"
+               data-editable="true">
+
+            <thead>
+                <tr>
+                    <th scope="col" data-sortable="true">ID</th>
+                    <th scope="col" data-sortable="true">Clinic Name</th>
+                    <th scope="col" data-sortable="true">Clinic Phone</th>
+                    <th scope="col" data-sortable="true">Town</th>
+                    <th scope="col" data-sortable="true">State</th>
+                    <th scope="col" data-sortable="true">Contact<br />First Name</th>
+                    <th scope="col" data-sortable="true">Contact<br />Last Name</th>
+                    <th scope="col" data-sortable="true" data-editable="true">Current<br />Strip Inv</th>
+                    <th scope="col" data-sortable="true">Avg. Num<br />Tests/Wk</th>
+                    <th scope="col" data-sortable="true">Proj. Strip<br />Run-Out</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td>Kaduna Community Healthcare</td>
+                    <td>809 74 987 678</td>
+                    <td>Kaduna</td>
+                    <td>Kaduna</td>
+                    <td>Atinuke</td>
+                    <td>Saaj</td>
+                    <td><input type="text" class="form-control" placeholder="110"></td>
+                    <td>36</td>
+                    <td>06/09/2019</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>St. Mary's Community Hospital</td>
+                    <td>805 297 2747</td>
+                    <td>Umuowa</td>
+                    <td>Imo</td>
+                    <td>Ada-afo</td>
+                    <td>Oluwanifemi</td>
+                    <td><input type="text" class="form-control" placeholder="350"></td>
+                    <td>84</td>
+                    <td>06/17/2019</td>
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                    <td>Kano Clinic</td>
+                    <td>809 64 890 123</td>
+                    <td>Kano</td>
+                    <td>Kano</td>
+                    <td>Daya</td>
+                    <td>Ngozi</td>
+                    <td><input type="text" class="form-control" placeholder="103"></td>
+                    <td>20</td>
+                    <td>06/24/2019</td>
+                </tr>
+
+                <tr>
+                    <td>17</td>
+                    <td>Ado-Ekiti Community Healthcare</td>
+                    <td>809 64 977 678</td>
+                    <td>Ado-Ekiti</td>
+                    <td>Ekiti</td>
+                    <td>Efetobo</td>
+                    <td>Laaban</td>
+                    <td><input type="text" class="form-control" placeholder="98"></td>
+                    <td>19</td>
+                    <td>06/24/2019</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Blue Sky Hospital</td>
+                    <td>802 440 1546</td>
+                    <td>Alimosho</td>
+                    <td>Lagos</td>
+                    <td>Ekwuaju</td>
+                    <td>Ife</td>
+                    <td><input type="text" class="form-control" placeholder="143"></td>
+                    <td>25</td>
+                    <td>06/28/2019</td>
+                </tr>
+
+                <tr>
+                    <td>14</td>
+                    <td>Benue Family Health</td>
+                    <td>809 56 321 532</td>
+                    <td>Benue</td>
+                    <td>Makurdi</td>
+                    <td>Chukwuma</td>
+                    <td>Laalit</td>
+                    <td><input type="text" class="form-control" placeholder="234"></td>
+                    <td>40</td>
+                    <td>06/28/2019</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Bali Clinic</td>
+                    <td>812 234 5670</td>
+                    <td>Bali</td>
+                    <td>Taraba</td>
+                    <td>Idara</td>
+                    <td>Njoku</td>
+                    <td><input type="text" class="form-control" placeholder="120"></td>
+                    <td>35</td>
+                    <td>06/29/2019</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Gombe Family Clinic</td>
+                    <td>809 24 977 122</td>
+                    <td>Gombe</td>
+                    <td>Gombe</td>
+                    <td>Sarah</td>
+                    <td>Maaki</td>
+                    <td><input type="text" class="form-control" placeholder="90"></td>
+                    <td>15</td>
+                    <td>06/30/2019</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Wawa Clinic</td>
+                    <td>809 66 977 532</td>
+                    <td>Wawa</td>
+                    <td>Enugu</td>
+                    <td>Chinara</td>
+                    <td>Maali</td>
+                    <td><input type="text" class="form-control" placeholder="345"></td>
+                    <td>56</td>
+                    <td>07/01/2019</td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>Warri Health</td>
+                    <td>809 34 123 456</td>
+                    <td>Warri</td>
+                    <td>Delta</td>
+                    <td>Ebhaleleme</td>
+                    <td>Okafor</td>
+                    <td><input type="text" class="form-control" placeholder="76"></td>
+                    <td>12</td>
+                    <td>07/02/2019</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Potiskum Pediatric</td>
+                    <td>809 61 555 333</td>
+                    <td>Potiskum</td>
+                    <td>Yobe</td>
+                    <td>Josh</td>
+                    <td>Gabina</td>
+                    <td><input type="text" class="form-control" placeholder="58"></td>
+                    <td>8</td>
+                    <td>07/08/2019</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Sokoto Family Clinic</td>
+                    <td>809 43 977 532</td>
+                    <td>Sokoto</td>
+                    <td>Sokoto</td>
+                    <td>Daraja</td>
+                    <td>Eze</td>
+                    <td><input type="text" class="form-control" placeholder="325"></td>
+                    <td>40</td>
+                    <td>07/14/2019</td>
+                </tr>
+
+                <tr>
+                    <td>11</td>
+                    <td>Enugu Healthcare</td>
+                    <td>809 74 432 589</td>
+                    <td>Enugu</td>
+                    <td>Enugu</td>
+                    <td>Rose</td>
+                    <td>Saajida</td>
+                    <td><input type="text" class="form-control" placeholder="602"></td>
+                    <td>71</td>
+                    <td>07/17/2019</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Outreach Hospital</td>
+                    <td>802 733 8723</td>
+                    <td>Abule Ado</td>
+                    <td>Lagos</td>
+                    <td>Onyinyechi</td>
+                    <td>Toluwalogo</td>
+                    <td><input type="text" class="form-control" placeholder="400"></td>
+                    <td>45</td>
+                    <td>07/20/2019</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>Zaria Community Clinic</td>
+                    <td>809 12 977 654</td>
+                    <td>Zaria</td>
+                    <td>Kaduna</td>
+                    <td>Saada</td>
+                    <td>Gaea</td>
+                    <td><input type="text" class="form-control" placeholder="200"></td>
+                    <td>18</td>
+                    <td>08/04/2019</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Faith City Hospital</td>
+                    <td>808 225 2996</td>
+                    <td>Isolo</td>
+                    <td>Lagos</td>
+                    <td>Somadina</td>
+                    <td>Zoputa</td>
+                    <td><input type="text" class="form-control" placeholder="246"></td>
+                    <td>22</td>
+                    <td>08/05/2019</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Mother & Child Hospital</td>
+                    <td>809 229 9223</td>
+                    <td>Ikeja</td>
+                    <td>Lagos</td>
+                    <td>Olisa</td>
+                    <td>Debare</td>
+                    <td><input type="text" class="form-control" placeholder="610"></td>
+                    <td>51</td>
+                    <td>08/10/2019</td>
+                </tr>
+
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
+</body>
+</html>
+

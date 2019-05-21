@@ -20,6 +20,13 @@ namespace Illuminate.Controllers
             return View();
         }
 
+        public ActionResult Inventory2()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
         public ActionResult AddEditClinic()
         {
             ViewBag.Message = "Your contact page.";
