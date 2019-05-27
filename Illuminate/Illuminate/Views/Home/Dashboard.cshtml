@@ -10,7 +10,6 @@
     </div>
     <div class="row justify-content-end">
 
-
         <a href="~/Content/Reports/blank.pdf" target="_blank" class="btn btn-primary btn-sm" role="button" style="margin-right: 4px">Download Report</a><br>
 
     </div>
@@ -48,14 +47,18 @@
                 </div>
             </div>
             <div class="col-4">
-
-                <img src="~/Content/Img/AC_result.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
+                <div>
+                    <a href="#resultsModal" data-toggle="modal" data-target="#resultsModal">
+                        <img src="~/Content/Img/AC_result.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
+                    </a>
+                </div>
+                
 
                 <img src="~/Content/Img/AC_num.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
 
                 <img src="~/Content/Img/AC_risk.png" class="mx-auto d-block img-fluid" style="margin-bottom: 8px" />
 
-                
+
 
             </div>
         </div>
@@ -95,6 +98,22 @@
                 <img src="~/Content/Img/AC_age.png" class="mx-auto d-block img-fluid" />
             </div>
         </div>
+    </div>
+</div>
+
+
+<div id="resultsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="~/Content/Img/AC_result.png" class="mx-auto d-block img-fluid" />
+            </div>
+        </div>
+
     </div>
 </div>
 
