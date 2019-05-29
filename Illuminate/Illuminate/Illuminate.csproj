@@ -159,6 +159,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Content\Reports\blank.pdf" />
     <Content Include="Content\Reports\Bali_Report.pdf" />
+    <Content Include="Content\Reports\All_Clinics_Report.pdf" />
     <None Include="Properties\PublishProfiles\TeamIlluminate - Web Deploy.pubxml" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
