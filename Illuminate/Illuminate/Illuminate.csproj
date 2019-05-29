@@ -228,10 +228,6 @@
     <Content Include="Views\Home\EditClinic1.cshtml" />
     <Content Include="Views\Home\EditClinic3.cshtml" />
     <Content Include="Views\Home\Inventory2.cshtml" />
-    <Content Include="Views\Home\TSBResultsDashboard.cshtml" />
-    <Content Include="Views\Home\NumTestsDashboard.cshtml" />
-    <Content Include="Views\Home\RiskLevelDashboard.cshtml" />
-    <Content Include="Views\Home\BabyAgeDashboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
