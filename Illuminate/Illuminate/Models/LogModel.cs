@@ -23,6 +23,19 @@ namespace Illuminate.Models
         // The baby's age in hours at the time the test result was recorded
         public int BabyAgeHours { get; set; }
 
+        // Constructor for Log Model
+        // Calls to Initialize to set initial settings
+        public LogModel()
+        {
+            Initialize();
+        }
+
+        // Intialize
+        // Sets default values as needed by the system
+        public void Initialize()
+        {
+            // None right now...
+        }
     }
 }
 
