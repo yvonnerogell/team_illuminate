@@ -36,6 +36,28 @@ namespace Illuminate.Models
         {
             // None right now...
         }
+
+        // Update fields passed in
+        // Updates all fields to be the values passed in
+        // Does NOT update the ID field, this allows for the method to be used as part of a copy.
+        public bool Update(LogModel data)
+        {
+            if (data == null)
+            {
+                return false;
+            }
+
+            // Don't update the ID, leave the old on in place
+            ResultID = data.ResultID;
+
+            // Update all the other fields
+            TSBResult = data.TSBResult;
+            ResultDateTime = data.ResultDateTime;
+            ClinicID = data.ClinicID;
+            BabyAgeHours = data.BabyAgeHours;
+
+            return true;
+        }
     }
 }
 
