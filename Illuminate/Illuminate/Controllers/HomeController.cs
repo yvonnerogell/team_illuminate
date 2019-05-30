@@ -67,7 +67,12 @@ namespace Illuminate.Controllers
             return View();
         }
 
- 
+        /// <summary>
+        /// Log the phone request
+        /// </summary>
+        /// <param name="data">Logs the ResultID, TSBResult, ResultDateTime, ClinicID
+        /// values gathered from phone.</param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Log([Bind(Include =
             "ResultID," +
