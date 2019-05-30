@@ -67,6 +67,20 @@ namespace Illuminate.Controllers
             return View();
         }
 
-     
+ 
+        [HttpPost]
+        public ActionResult Log([Bind(Include =
+            "ResultID," +
+            "TSBResult," +
+            "ResultDateTime," +
+            "ClinicID" +
+            "")] LogModel data)
+        {
+            // TODO: Call to store later
+            // var myData = LogBackend.Instance.Create(data);
+            return Json("OK", JsonRequestBehavior.AllowGet);
+        }
+
+
     }
 }
