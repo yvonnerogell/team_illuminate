@@ -31,8 +31,6 @@ namespace Illuminate.Controllers
 
         public ActionResult Welcome()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
