@@ -16,29 +16,21 @@ namespace Illuminate.Controllers
 
         public ActionResult Inventory()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Inventory2()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult AddEditClinic()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
         public ActionResult Welcome()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
@@ -46,7 +38,7 @@ namespace Illuminate.Controllers
         {
             return View();
         }
-
+ 
         public ActionResult EditClinic1()
         {
             return View();
@@ -85,7 +77,5 @@ namespace Illuminate.Controllers
             // var myData = LogBackend.Instance.Create(data);
             return Json("OK", JsonRequestBehavior.AllowGet);
         }
-
-
     }
 }
