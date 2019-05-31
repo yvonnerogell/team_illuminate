@@ -16,8 +16,6 @@ namespace Illuminate.Controllers
 
         public ActionResult Inventory()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
