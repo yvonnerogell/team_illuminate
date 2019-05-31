@@ -38,7 +38,7 @@ namespace Illuminate.Controllers
         {
             return View();
         }
-
+ 
         public ActionResult EditClinic1()
         {
             return View();
@@ -77,7 +77,5 @@ namespace Illuminate.Controllers
             // var myData = LogBackend.Instance.Create(data);
             return Json("OK", JsonRequestBehavior.AllowGet);
         }
-
-
     }
 }
