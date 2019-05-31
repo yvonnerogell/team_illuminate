@@ -26,8 +26,6 @@ namespace Illuminate.Controllers
 
         public ActionResult AddEditClinic()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
